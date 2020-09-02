@@ -72,9 +72,10 @@ public class IndexController {
 		return new ResponseEntity<User>(usuarioNovo, HttpStatus.OK);
 	}	
 	
-	
+
 	@DeleteMapping(value = "/{id}")
 	public void deletar(@PathVariable Long id){
+		System.out.println("deleting user");
 		userRepository.deleteById(id);
 	}
 	

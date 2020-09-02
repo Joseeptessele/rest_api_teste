@@ -51,6 +51,16 @@ public class User {
 		this.nome = nome;
 	}
 
+	@java.lang.Override
+	public java.lang.String toString() {
+		return "User{" +
+				"id=" + id +
+				", login='" + login + '\'' +
+				", senha='" + senha + '\'' +
+				", nome='" + nome + '\'' +
+				'}';
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
