@@ -68,7 +68,7 @@ public class IndexController {
 		
 		usuarioNovo.setId(id);
 		userRepository.save(usuarioNovo);
-		
+		System.out.println("editando usuario..");
 		return new ResponseEntity<User>(usuarioNovo, HttpStatus.OK);
 	}	
 	
